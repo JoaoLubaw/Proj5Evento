@@ -1,0 +1,76 @@
+@use 'variables';
+
+.event {
+    padding:80px 0;
+
+    &__title {
+        font-family: Lolapeluza, sans-serif;
+        font-weight: 100;
+        font-size: 100px;
+        margin: 0 auto;
+
+        @media (max-width: 640px) {
+            font-size: 60px;
+            margin-bottom: 10px;
+
+            &--2 {
+                font-size: 40px;
+            }
+        }
+
+        &--2 {
+            font-size: 70px;
+        }
+    }
+
+    &--frontend {
+        background-image: linear-gradient(variables.$ludRed, variables.$ludblack);
+    }
+
+    &--frontend2 {
+        background-image: linear-gradient(variables.$ludblack, variables.$button);
+        padding-bottom: 200px;
+    }
+
+    &--frontend3 {
+        background-color: variables.$button;
+
+        h1 {
+            font-size: 20px;
+            font-weight: 400;
+            margin: 0 auto;
+        }
+        
+    }
+
+    .container {
+        display: flex;
+        font-size: 20px;
+        max-width: 1300px;
+
+        .big {
+            font-size: 28px;
+            font-weight: bold;
+        }
+    }
+
+    @media (max-width: 640px) {
+
+        .container {
+            display: block;
+            font-size: 18px;
+            max-width: 90%;
+
+            .big {
+                font-size: 22px;
+            }
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .container {
+            max-width: 90%;
+        }
+        
+    }
+}
